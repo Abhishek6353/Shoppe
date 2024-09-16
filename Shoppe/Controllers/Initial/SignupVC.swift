@@ -37,7 +37,7 @@ class SignupVC: UIViewController {
     
     //MARK: - @IBAction
     @IBAction func btnCancelAction(_ sender: UIButton) {
-        
+        self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func btnDoneAction(_ sender: UIButton) {

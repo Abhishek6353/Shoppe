@@ -19,6 +19,14 @@ class WelcomeVC: UIViewController {
 //MARK: - @IBAction
     @IBAction func btnCreateAccountTapped(_ sender: UIButton) {
         let signUpVC = storyboard?.instantiateViewController(withIdentifier: SignupVC.className) as! SignupVC
-        self.navigationController?.pushViewController(signUpVC, animated: true)
+        SceneDelegate().sceneDelegate?.mainNav?.pushViewController(signUpVC, animated: true)
+//        self.navigationController?.pushViewController(signUpVC, animated: true)
+    }
+    
+    
+    @IBAction func btnGetStartAction(_ sender: UIButton) {
+        let loginVC = storyboard?.instantiateViewController(withIdentifier: LoginVC.className) as! LoginVC
+        SceneDelegate().sceneDelegate?.mainNav?.pushViewController(loginVC, animated: true)
+//        self.navigationController?.pushViewController(loginVC, animated: true)
     }
 }
