@@ -41,6 +41,7 @@
 		46D6DA8D2C7CA7FD00D0BAC0 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 46D6DA7B2C7CA7F200D0BAC0 /* Poppins-SemiBold.ttf */; };
 		46D6DA8E2C7CA7FD00D0BAC0 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 46D6DA702C7CA7F200D0BAC0 /* Poppins-Thin.ttf */; };
 		46D6DA8F2C7CA7FD00D0BAC0 /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 46D6DA792C7CA7F200D0BAC0 /* Poppins-ThinItalic.ttf */; };
+		46DB3AA92C99F540002AF7B0 /* OTPVerificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DB3AA82C99F540002AF7B0 /* OTPVerificationVC.swift */; };
 		46FDE6AF2C7CAFE800E7DC2C /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FDE6AE2C7CAFE800E7DC2C /* SignupVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +82,7 @@
 		46D6DA7B2C7CA7F200D0BAC0 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		46D6DA7C2C7CA7F200D0BAC0 /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		46D6DA7D2C7CA7F200D0BAC0 /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
+		46DB3AA82C99F540002AF7B0 /* OTPVerificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVerificationVC.swift; sourceTree = "<group>"; };
 		46FDE6AE2C7CAFE800E7DC2C /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
 		A20873A80D184EB916AF5951 /* Pods-Shoppe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shoppe.debug.xcconfig"; path = "Target Support Files/Pods-Shoppe/Pods-Shoppe.debug.xcconfig"; sourceTree = "<group>"; };
 		C132A98C2CEEF9068F2AAC0D /* Pods_Shoppe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shoppe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +107,7 @@
 				46FDE6AE2C7CAFE800E7DC2C /* SignupVC.swift */,
 				46CB85C02C7CC95E00F2CF4A /* LoginVC.swift */,
 				460CCDE62C98B19800847821 /* PasswordRecoveryVC.swift */,
+				46DB3AA82C99F540002AF7B0 /* OTPVerificationVC.swift */,
 			);
 			path = Initial;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46FDE6AF2C7CAFE800E7DC2C /* SignupVC.swift in Sources */,
+				46DB3AA92C99F540002AF7B0 /* OTPVerificationVC.swift in Sources */,
 				46071DC12C7C80A500CC30D1 /* Fonts.swift in Sources */,
 				46071DBF2C7C7EE000CC30D1 /* PrimaryButton.swift in Sources */,
 				46BBA4902C7BA7AF00DF585F /* AppDelegate.swift in Sources */,

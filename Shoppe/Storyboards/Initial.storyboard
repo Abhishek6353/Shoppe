@@ -11,6 +11,7 @@
     </dependencies>
     <customFonts key="customFonts">
         <array key="NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf">
+            <string>NunitoSans-12ptExtraLight_Bold</string>
             <string>NunitoSans-12ptExtraLight_Light</string>
         </array>
         <array key="Poppins-Medium.ttf">
@@ -776,6 +777,164 @@ Account</string>
             </objects>
             <point key="canvasLocation" x="2344.2748091603053" y="-27.464788732394368"/>
         </scene>
+        <!--VerificationVC-->
+        <scene sceneID="ASn-Ju-XNf">
+            <objects>
+                <viewController storyboardIdentifier="OTPVerificationVC" id="xc9-nS-0oQ" customClass="OTPVerificationVC" customModule="Shoppe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3rQ-8C-iFo">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgPassRecovery" translatesAutoresizingMaskIntoConstraints="NO" id="2Qt-1a-Nxe">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="262"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0tO-vF-CEN">
+                                <rect key="frame" x="0.0" y="59" width="393" height="105"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6sY-Qm-1oh">
+                                <rect key="frame" x="144" y="164" width="105" height="105"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgProfile" translatesAutoresizingMaskIntoConstraints="NO" id="WPe-FY-x3x">
+                                        <rect key="frame" x="7" y="7" width="91" height="91"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="WPe-FY-x3x" secondAttribute="trailing" constant="7" id="0j0-Bz-71e"/>
+                                    <constraint firstItem="WPe-FY-x3x" firstAttribute="top" secondItem="6sY-Qm-1oh" secondAttribute="top" constant="7" id="8X0-x8-5Z8"/>
+                                    <constraint firstAttribute="width" secondItem="6sY-Qm-1oh" secondAttribute="height" multiplier="1:1" id="Nf3-ik-oT3"/>
+                                    <constraint firstAttribute="bottom" secondItem="WPe-FY-x3x" secondAttribute="bottom" constant="7" id="waf-XF-aWe"/>
+                                    <constraint firstItem="WPe-FY-x3x" firstAttribute="leading" secondItem="6sY-Qm-1oh" secondAttribute="leading" constant="7" id="zBe-Yd-kRU"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" name="blackShadow16%"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
+                                        <point key="value" x="0.0" y="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ODg-qZ-g9v">
+                                <rect key="frame" x="40" y="281" width="313" height="108.66666666666669"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password Recovery" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="kDm-X9-ZRp">
+                                        <rect key="frame" x="0.0" y="0.0" width="313" height="24.666666666666668"/>
+                                        <fontDescription key="fontDescription" name="RalewayRoman-Bold" family="Raleway" pointSize="21"/>
+                                        <color key="textColor" name="textPrimary"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter 4-digits code we sent you on your phone number" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="deB-R9-o6E">
+                                        <rect key="frame" x="0.0" y="29.666666666666686" width="313" height="52"/>
+                                        <fontDescription key="fontDescription" name="NunitoSans-12ptExtraLight_Light" family="Nunito Sans" pointSize="19"/>
+                                        <color key="textColor" name="textPrimary"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+98*******00" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="hdD-26-cJl">
+                                        <rect key="frame" x="0.0" y="86.666666666666686" width="313" height="22"/>
+                                        <fontDescription key="fontDescription" name="NunitoSans-12ptExtraLight_Bold" family="Nunito Sans" pointSize="16"/>
+                                        <color key="textColor" name="textPrimary"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PU6-Go-t7m">
+                                <rect key="frame" x="174" y="752" width="45" height="33"/>
+                                <fontDescription key="fontDescription" name="NunitoSans-12ptExtraLight_Light" family="Nunito Sans" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" name="textPrimary"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnCancelAction:" destination="xc9-nS-0oQ" eventType="touchUpInside" id="lMq-Qz-BBX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAU-hb-6za">
+                                <rect key="frame" x="96" y="678" width="201" height="50"/>
+                                <color key="backgroundColor" name="#FF5790"/>
+                                <fontDescription key="fontDescription" name="NunitoSans-12ptExtraLight_Light" family="Nunito Sans" pointSize="22"/>
+                                <inset key="contentEdgeInsets" minX="44" minY="0.0" maxX="44" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Send Again">
+                                    <color key="titleColor" name="buttonPrimaryText"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnSendAgainAction:" destination="xc9-nS-0oQ" eventType="touchUpInside" id="SAY-Hc-Def"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mjB-kC-faF" customClass="DPOTPView" customModule="Shoppe">
+                                <rect key="frame" x="89" y="417.66666666666669" width="215" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="215" id="iJL-Xw-jc1"/>
+                                    <constraint firstAttribute="height" constant="50" id="tYk-wF-kpl"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="count">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="spacing">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColorTextField">
+                                        <color key="value" name="textPrimary"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backGroundColorTextField">
+                                        <color key="value" name="backgroundSecondary"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vfR-OI-CPq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0tO-vF-CEN" firstAttribute="height" secondItem="3rQ-8C-iFo" secondAttribute="height" multiplier="0.123239" id="AcK-W6-E3F"/>
+                            <constraint firstItem="2Qt-1a-Nxe" firstAttribute="height" secondItem="3rQ-8C-iFo" secondAttribute="height" multiplier="0.307512" id="B7q-Og-tpR"/>
+                            <constraint firstItem="vfR-OI-CPq" firstAttribute="trailing" secondItem="0tO-vF-CEN" secondAttribute="trailing" id="Bht-L9-Q7R"/>
+                            <constraint firstAttribute="trailing" secondItem="2Qt-1a-Nxe" secondAttribute="trailing" id="E9e-lr-cSZ"/>
+                            <constraint firstItem="0tO-vF-CEN" firstAttribute="leading" secondItem="vfR-OI-CPq" secondAttribute="leading" id="KjU-9X-GuX"/>
+                            <constraint firstItem="bAU-hb-6za" firstAttribute="centerX" secondItem="3rQ-8C-iFo" secondAttribute="centerX" id="Nid-2t-laa"/>
+                            <constraint firstItem="bAU-hb-6za" firstAttribute="height" secondItem="3rQ-8C-iFo" secondAttribute="height" multiplier="0.0585" id="QfI-W1-QP2"/>
+                            <constraint firstItem="mjB-kC-faF" firstAttribute="top" secondItem="ODg-qZ-g9v" secondAttribute="bottom" constant="28" id="UWM-oQ-3S6"/>
+                            <constraint firstItem="ODg-qZ-g9v" firstAttribute="leading" secondItem="vfR-OI-CPq" secondAttribute="leading" constant="40" id="V7C-VF-oek"/>
+                            <constraint firstItem="ODg-qZ-g9v" firstAttribute="top" secondItem="6sY-Qm-1oh" secondAttribute="bottom" constant="12" id="Xlh-7G-7h2"/>
+                            <constraint firstItem="2Qt-1a-Nxe" firstAttribute="top" secondItem="3rQ-8C-iFo" secondAttribute="top" id="aS0-Gb-gRs"/>
+                            <constraint firstItem="vfR-OI-CPq" firstAttribute="bottom" secondItem="PU6-Go-t7m" secondAttribute="bottom" constant="33" id="cdB-4D-qPf"/>
+                            <constraint firstAttribute="trailing" secondItem="ODg-qZ-g9v" secondAttribute="trailing" constant="40" id="eNv-at-iLd"/>
+                            <constraint firstItem="6sY-Qm-1oh" firstAttribute="centerX" secondItem="3rQ-8C-iFo" secondAttribute="centerX" id="jSf-eK-EOB"/>
+                            <constraint firstItem="6sY-Qm-1oh" firstAttribute="height" secondItem="3rQ-8C-iFo" secondAttribute="height" multiplier="0.123239" id="lQk-Sh-ZhX"/>
+                            <constraint firstItem="6sY-Qm-1oh" firstAttribute="top" secondItem="0tO-vF-CEN" secondAttribute="bottom" id="n4Z-6o-jSJ"/>
+                            <constraint firstItem="PU6-Go-t7m" firstAttribute="top" secondItem="bAU-hb-6za" secondAttribute="bottom" constant="24" id="pIc-n5-gZ1"/>
+                            <constraint firstItem="2Qt-1a-Nxe" firstAttribute="leading" secondItem="vfR-OI-CPq" secondAttribute="leading" id="v0L-af-6Ys"/>
+                            <constraint firstItem="PU6-Go-t7m" firstAttribute="centerX" secondItem="3rQ-8C-iFo" secondAttribute="centerX" id="vQX-x4-scq"/>
+                            <constraint firstItem="mjB-kC-faF" firstAttribute="centerX" secondItem="3rQ-8C-iFo" secondAttribute="centerX" id="xHb-cJ-FiG"/>
+                            <constraint firstItem="0tO-vF-CEN" firstAttribute="top" secondItem="vfR-OI-CPq" secondAttribute="top" id="zQP-CT-LPK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnSendAgain" destination="bAU-hb-6za" id="kiE-Pq-2tA"/>
+                        <outlet property="imgProfile" destination="WPe-FY-x3x" id="PLv-ua-Dqg"/>
+                        <outlet property="lblDesc" destination="deB-R9-o6E" id="vOU-8x-d2N"/>
+                        <outlet property="lblVerificationMedium" destination="hdD-26-cJl" id="83t-Mj-2SY"/>
+                        <outlet property="stackView" destination="ODg-qZ-g9v" id="Vk1-MF-9dJ"/>
+                        <outlet property="viewProfile" destination="6sY-Qm-1oh" id="IN2-Fl-DSg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IDE-Gd-z4o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3062" y="-27"/>
+        </scene>
     </scenes>
     <resources>
         <image name="bgLogin" width="375" height="812"/>
@@ -788,6 +947,9 @@ Account</string>
         <image name="iconTIckWhite" width="11" height="8"/>
         <image name="imgProfile" width="91" height="91"/>
         <image name="logo" width="150" height="150"/>
+        <namedColor name="#FF5790">
+            <color red="1" green="0.3411764705882353" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="backgroundSecondary">
             <color red="0.97299998998641968" green="0.97299998998641968" blue="0.97299998998641968" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

@@ -35,7 +35,22 @@ class PasswordRecoveryVC: UIViewController {
     }
     
     @IBAction func btnNextAction(_ sender: UIButton) {
-        
+        guard let vc = self.storyboard?.instantiateViewController(withIdentifier: OTPVerificationVC.className) as? OTPVerificationVC else {
+            return
+        }
+
+        // Create a transition
+        let transition = CATransition()
+        transition.duration = 0.3
+        transition.type = CATransitionType.fade
+        transition.subtype = CATransitionSubtype.fromRight
+        transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+
+        // Add the transition to the navigation controller's view
+        self.navigationController?.view.layer.add(transition, forKey: kCATransition)
+
+        // Push the view controller
+        self.navigationController?.pushViewController(vc, animated: false)
     }
     
     @IBAction func btnRecoveryAction(_ sender: UIButton) {

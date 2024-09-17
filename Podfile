@@ -8,5 +8,6 @@ target 'Shoppe' do
   # Pods for Shoppe
 
 pod 'IQKeyboardManagerSwift'
+pod 'DPOTPView'
 
 end

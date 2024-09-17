@@ -1,16 +1,20 @@
 PODS:
+  - DPOTPView (1.5.12)
   - IQKeyboardManagerSwift (7.1.1)
 
 DEPENDENCIES:
+  - DPOTPView
   - IQKeyboardManagerSwift
 
 SPEC REPOS:
   trunk:
+    - DPOTPView
     - IQKeyboardManagerSwift
 
 SPEC CHECKSUMS:
+  DPOTPView: 28d8a0a84a2ff4b1e4a7712065aba1cbb14e2704
   IQKeyboardManagerSwift: d7f3d3a562c237a0e7335e657cd598c452f57f1b
 
-PODFILE CHECKSUM: 329a2e2f7bd71b128690f97ff3948bf9569135a1
+PODFILE CHECKSUM: 5f71d27801b42e099de00147b00f07f1c5f8836b
 
 COCOAPODS: 1.15.2
