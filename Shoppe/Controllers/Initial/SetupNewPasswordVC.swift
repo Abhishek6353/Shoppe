@@ -43,6 +43,7 @@ class SetupNewPasswordVC: UIViewController {
     func setupUI() {
         viewNewPassword.layer.cornerRadius = viewNewPassword.frame.height / 2
         viewRepeatPassword.layer.cornerRadius = viewRepeatPassword.frame.height / 2
+        viewProfile.layer.cornerRadius = viewProfile.frame.height / 2
     }
     
     func navigateToBack() {
