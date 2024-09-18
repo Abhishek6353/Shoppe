@@ -21,14 +21,11 @@ class PasswordRecoveryVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+setupUI()
+    }
+    
 
-    }
-    
-    
-    override func viewWillLayoutSubviews() {
-        viewProfile.layer.cornerRadius = viewProfile.frame.height / 2
-    }
-    
+
     //MARK: - @IBAction
     @IBAction func btnCancelAction(_ sender: UIButton) {
         SceneDelegate().sceneDelegate?.mainNav?.popViewController(animated: true)
@@ -56,6 +53,13 @@ class PasswordRecoveryVC: UIViewController {
     @IBAction func btnRecoveryAction(_ sender: UIButton) {
         imgSMS.isHidden = sender.tag == 1
         imgEmail.isHidden = sender.tag == 0
+    }
+    
+    
+    
+    //MARK: - Functions
+    func setupUI() {
+        viewProfile.layer.cornerRadius = viewProfile.frame.height / 2
     }
     
 }

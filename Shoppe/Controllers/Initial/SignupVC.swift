@@ -29,11 +29,6 @@ class SignupVC: UIViewController {
         setupUI()
     }
     
-    override func viewWillLayoutSubviews() {
-        emailView.layer.cornerRadius = emailView.bounds.height / 2
-        passwordView.layer.cornerRadius = passwordView.bounds.height / 2
-        numberView.layer.cornerRadius = numberView.bounds.height / 2
-    }
     
     //MARK: - @IBAction
     @IBAction func btnCancelAction(_ sender: UIButton) {
@@ -52,7 +47,14 @@ class SignupVC: UIViewController {
     
     //MARK: - Functions
     func setupUI() {
+        
+        emailView.layer.cornerRadius = emailView.bounds.height / 2
+        passwordView.layer.cornerRadius = passwordView.bounds.height / 2
+        numberView.layer.cornerRadius = numberView.bounds.height / 2
+
         btnPasswordShowHide.setImage(.iconEyeOpened, for: .normal)
         btnPasswordShowHide.setImage(.iconEyeClosed, for: .selected)
+        
+        
     }
 }

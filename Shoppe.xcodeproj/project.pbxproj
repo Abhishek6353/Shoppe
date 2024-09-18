@@ -23,6 +23,7 @@
 		46BBA4992C7BA7B000DF585F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46BBA4982C7BA7B000DF585F /* Assets.xcassets */; };
 		46BBA4AA2C7BB81A00DF585F /* NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 46BBA4A92C7BB81500DF585F /* NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf */; };
 		46CB85C12C7CC95E00F2CF4A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CB85C02C7CC95E00F2CF4A /* LoginVC.swift */; };
+		46D1889A2C9B5D87006A84E0 /* SetupNewPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D188992C9B5D87006A84E0 /* SetupNewPasswordVC.swift */; };
 		46D6DA7E2C7CA7FD00D0BAC0 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 46D6DA762C7CA7F200D0BAC0 /* Poppins-Regular.ttf */; };
 		46D6DA7F2C7CA7FD00D0BAC0 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 46D6DA772C7CA7F200D0BAC0 /* Poppins-Bold.ttf */; };
 		46D6DA802C7CA7FD00D0BAC0 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 46D6DA6E2C7CA7F200D0BAC0 /* Poppins-Medium.ttf */; };
@@ -64,6 +65,7 @@
 		46BBA49D2C7BA7B000DF585F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46BBA4A92C7BB81500DF585F /* NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf"; sourceTree = "<group>"; };
 		46CB85C02C7CC95E00F2CF4A /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		46D188992C9B5D87006A84E0 /* SetupNewPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupNewPasswordVC.swift; sourceTree = "<group>"; };
 		46D6DA6C2C7CA7F200D0BAC0 /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		46D6DA6D2C7CA7F200D0BAC0 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
 		46D6DA6E2C7CA7F200D0BAC0 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				46CB85C02C7CC95E00F2CF4A /* LoginVC.swift */,
 				460CCDE62C98B19800847821 /* PasswordRecoveryVC.swift */,
 				46DB3AA82C99F540002AF7B0 /* OTPVerificationVC.swift */,
+				46D188992C9B5D87006A84E0 /* SetupNewPasswordVC.swift */,
 			);
 			path = Initial;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 			files = (
 				46FDE6AF2C7CAFE800E7DC2C /* SignupVC.swift in Sources */,
 				46DB3AA92C99F540002AF7B0 /* OTPVerificationVC.swift in Sources */,
+				46D1889A2C9B5D87006A84E0 /* SetupNewPasswordVC.swift in Sources */,
 				46071DC12C7C80A500CC30D1 /* Fonts.swift in Sources */,
 				46071DBF2C7C7EE000CC30D1 /* PrimaryButton.swift in Sources */,
 				46BBA4902C7BA7AF00DF585F /* AppDelegate.swift in Sources */,

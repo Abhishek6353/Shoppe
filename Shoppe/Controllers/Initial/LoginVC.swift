@@ -11,17 +11,14 @@ class LoginVC: UIViewController {
     
     //MARK: - @IBOutlet
     @IBOutlet weak var emailView: UIView!
+    @IBOutlet weak var passwordVIew: UIView!
     
     
     //MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
-    }
-    
-    override func viewWillLayoutSubviews() {
-        emailView.layer.cornerRadius = emailView.bounds.height / 2
+setupUI()
     }
 
     
@@ -37,5 +34,12 @@ class LoginVC: UIViewController {
     @IBAction func btnForgorPasswordAction(_ sender: UIButton) {
         let passRecoveryVC = storyboard?.instantiateViewController(withIdentifier: PasswordRecoveryVC.className) as! PasswordRecoveryVC
         SceneDelegate().sceneDelegate?.mainNav?.pushViewController(passRecoveryVC, animated: true)
+    }
+    
+    
+    //MARK: - Functions
+    func setupUI() {
+        emailView.layer.cornerRadius = emailView.bounds.height / 2
+        passwordVIew.layer.cornerRadius = passwordVIew.bounds.height / 2
     }
 }
