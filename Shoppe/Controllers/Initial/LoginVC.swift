@@ -17,10 +17,10 @@ class LoginVC: UIViewController {
     //MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-setupUI()
+        
+        setupUI()
     }
-
+    
     
     //MARK: - @IBAction
     @IBAction func btnCancelAction(_ sender: UIButton) {

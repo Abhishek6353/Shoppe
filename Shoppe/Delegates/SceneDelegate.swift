@@ -26,7 +26,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
-        let welcomeVC = UIStoryboard(name: "Initial", bundle: nil).instantiateViewController(withIdentifier: WelcomeVC.className) as! WelcomeVC
+        let welcomeVC = UIStoryboard(name: "Initial", bundle: nil).instantiateViewController(withIdentifier: OnboardingVC.className) as! OnboardingVC
         mainNav = UINavigationController(rootViewController: welcomeVC)
         mainNav?.navigationBar.isHidden = true
         

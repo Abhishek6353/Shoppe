@@ -25,6 +25,7 @@ class OTPVerificationVC: UIViewController {
         super.viewDidLoad()
 
         setupUI()
+        lblDesc.backgroundColor = .FF_5790
     }
     
     override func viewDidAppear(_ animated: Bool) {
